@@ -1,0 +1,51 @@
+{
+  "home": {
+    "title": "实时信息",
+    "path": "/protocol/real_info",
+    "type": "page",
+    "schema":"true",
+    "layout": "horizontal"
+  },
+  "para": {
+    "title": "参数设置",
+    "path": "/protocol/para",
+    "type": "page",
+    "schema":"true",
+    "layout": "horizontal"
+  },
+  "warranty": {
+    "title": "质保时间",
+    "path": "/toolbar/warranty",
+    "type": "page",
+    "schema":"true",
+    "layout": "horizontal"
+  },
+  "warning": {
+    "title": "历史告警",
+    "path": "/toolbar/warning",
+    "type": "table",
+    "isBtn":"false",
+    "layout": "vertical"
+  },
+  "history": {
+    "title": "历史数据",
+    "path": "/toolbar/warning",
+    "type": "table",
+    "isBtn":"false",
+    "layout": "vertical"
+  },
+  "email": {
+    "title": "邮箱",
+    "path": "/toolbar/email",
+    "type": "dialog",
+    "isBtn":"false",
+    "layout": "vertical"
+  },
+  "details": {
+    "title": "详情",
+    "path": "/toolbar/details",
+    "type": "dialog",
+    "isBtn":"true",
+    "layout": "vertical"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "item1": {
+    "name": "",
+    "value": "1. 所有资源文件都在app目录下",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "item2": {
+    "name": "",
+    "value": "2. 程序入口:page_conf目录.如果要增加或者修改页面,修改page_conf目录下的menubar或者toolbar.json文件",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "item3": {
+    "name": "",
+    "value": "3.如果要增加或者修改页面里面的内容,根据toolbar或者menubar中的path配置,对应修改或增加",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "item4": {
+    "name": "",
+    "value": "4.关于语言:language目录.lan.json文件定义有哪些语言,以及语言文件对应的路径",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "item5": {
+    "name": "",
+    "value": "5.如果要增加语言比如法语.在lan中增加fr项,并增加fr.json提供法语的语言文件",
+    "type": "Label",
+    "isShow": "true"
+  }
+}

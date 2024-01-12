@@ -1,0 +1,135 @@
+{
+  "home": {
+    "name": "toolbar.real_info",
+    "type": "page",
+    "layout": "hbox",
+    "group_name": "real_info",
+    "cmd_read": "RE",
+    "items": {
+      "item1": {
+        "path": "/protocol/real_info",
+        "layout": "grid",
+        "column": "2",
+        "resize": "true",
+        "protocol_types": "01,03",
+        "protocol_type": "01"
+      }
+    }
+  },
+  "para": {
+    "name": "toolbar.para_setting",
+    "type": "page",
+    "layout": "hbox",
+    "group_name": "para_info",
+    "cmd_read": "PE",
+    "handler_class": "HandlerPara",
+    "items": {
+      "item1": {
+        "path": "/protocol/para",
+        "layout": "grid",
+        "resize": "true",
+        "protocol_types": "01,03",
+        "protocol_type": "01"
+      }
+    }
+  },
+  "email": {
+    "name": "邮件设置",
+    "type": "dialog",
+    "layout": "grid",
+    "path": "/toolbar/email",
+    "is_icon_show": "false",
+    "group_name": "email",
+    "handler_class": "HandlerEmail"
+  },
+  "history": {
+    "name": "toolbar.history_data",
+    "type": "tabpane",
+    "layout": "hbox",
+    "group_name": "history",
+    "items": {
+      "item1": {
+        "layout": "vbox",
+        "tab": "history.table",
+        "items1": {
+          "item11": {
+            "path": "/component/table_top",
+            "layout": "hbox"
+          },
+          "item12": {
+            "path": "/component/table_content",
+            "layout": "table",
+            "group_name": "history_data"
+          },
+          "item13": {
+            "path": "/component/table_btm",
+            "layout": "hbox"
+          }
+        }
+      },
+      "item2": {
+        "layout": "vbox",
+        "tab": "history.chart",
+        "items1": {
+          "item11": {
+            "path": "/component/chart_top",
+            "layout": "hbox"
+          },
+          "item12": {
+            "path": "/component/chart_content",
+            "layout": "chart"
+          },
+          "item13": {
+            "path": "/component/chart_btm",
+            "layout": "hbox"
+          }
+        }
+      }
+    }
+  },
+  "warning": {
+    "name": "toolbar.history_warning",
+    "type": "tabpane",
+    "layout": "hbox",
+    "group_name": "warning",
+    "items": {
+      "item1": {
+        "layout": "vbox",
+        "tab": "history.table",
+        "items1": {
+          "item11": {
+            "path": "/component/table_top",
+            "layout": "hbox"
+          },
+          "item12": {
+            "path": "/component/table_content",
+            "layout": "table",
+            "group_name": "history_data"
+          },
+          "item13": {
+            "path": "/component/table_btm",
+            "layout": "hbox"
+          }
+        }
+      },
+      "item2": {
+        "layout": "vbox",
+        "tab": "history.chart",
+        "items1": {
+          "item11": {
+            "path": "/component/chart_top",
+            "layout": "hbox"
+          },
+          "item12": {
+            "path": "/component/chart_content",
+            "layout": "chart"
+          },
+          "item13": {
+            "path": "/component/chart_btm",
+            "layout": "hbox"
+          }
+        }
+      }
+    }
+  }
+}

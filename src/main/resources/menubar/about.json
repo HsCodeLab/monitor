@@ -1,0 +1,26 @@
+{
+  "name": {
+    "name": "软件名称",
+    "value": "上位机监控软件",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "version": {
+    "name": "版本号",
+    "value": "1.0.0",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "copyright": {
+    "name": "版权信息",
+    "value": " 2023 WatsonTech",
+    "type": "Label",
+    "isShow": "true"
+  },
+  "us": {
+    "name": "官网",
+    "value": "https://gitee.com/watson_bi/monitor",
+    "type": "Hyperlink",
+    "isShow": "true"
+  }
+}

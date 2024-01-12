@@ -1,0 +1,116 @@
+{
+  "file": {
+    "name": "menubar.file",
+    "items": {
+      "open": {
+        "name": "menubar.open",
+        "function": ""
+      },
+      "save": {
+        "name": "menubar.save",
+        "function": ""
+      },
+      "exit": {
+        "name": "menubar.exit",
+        "function": ""
+      }
+    }
+  },
+  "settings": {
+    "name": "menubar.setting",
+    "items": {
+      "common": {
+        "name": "menubar.dev_mode",
+        "path": "/menubar/common",
+        "layout": "grid",
+        "type": "dialog"
+      }
+    }
+  },
+  "general_settings": {
+    "name": "menubar.setting_common",
+    "items": {
+      "temp": {
+        "name": "menubar.setting_common",
+        "path": "/menubar/common",
+        "layout": "grid",
+        "type": "dialog",
+        "group_name": "temp",
+        "is_icon_show": "false",
+        "handler_class": "HandlerCommon"
+      }
+    }
+  },
+  "communication": {
+    "name": "menubar.setting_communication",
+    "items": {
+      "serial": {
+        "name": "menubar.serial_port",
+        "path": "/menubar/serial",
+        "layout": "grid",
+        "type": "dialog",
+        "group_name": "serial",
+        "is_icon_show": "false",
+        "handler_class": "HandlerSerial"
+      },
+      "usb": {
+        "name": "USB",
+        "function": ""
+      },
+      "modbus": {
+        "name": "Modbus",
+        "path": "/menubar/modbus",
+        "layout": "grid",
+        "type": "dialog"
+      },
+      "snmp": {
+        "name": "SNMP",
+        "function": ""
+      }
+    }
+  },
+  "language": {
+    "name": "menubar.lan",
+    "items": {
+      "zh": {
+        "name": "中文",
+        "function": ""
+      },
+      "en": {
+        "name": "English",
+        "function": ""
+      }
+    }
+  },
+  "theme": {
+    "name": "menubar.theme",
+    "items": {
+      "light": {
+        "name": "menubar.theme_light",
+        "function": "click_theme"
+      },
+      "dark": {
+        "name": "menubar.theme_dark",
+        "function": "click_theme"
+      }
+    }
+  },
+  "help": {
+    "name": "menubar.help",
+    "items": {
+      "help": {
+        "name": "menubar.help",
+        "path": "/menubar/help",
+        "layout": "grid",
+        "type": "page"
+      },
+      "about": {
+        "name": "menubar.about",
+        "path": "/menubar/about",
+        "layout": "grid",
+        "type": "dialog",
+        "is_icon_show": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ip": {
+    "name": "IP地址",
+    "value": "0.0.0.0",
+    "type": "TextField",
+    "editable": "true"
+  },
+  "nickname": {
+    "name": "UPS别名",
+    "value": "UPS 5Kw",
+    "type": "TextField",
+    "editable": "true"
+  },
+  "model": {
+    "name": "UPS型号",
+    "value": "UPS离网5kW",
+    "type": "TextField",
+    "editable": "true"
+  },
+  "status": {
+    "name": "UPS状态",
+    "value": "待机",
+    "type": "TextField",
+    "editable": "true"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "vol_in": {
+    "name": "home.vol_input",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "01"
+  },
+  "vol_in_A": {
+    "name": "home.vol_input_a",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "vol_in_B": {
+    "name": "home.vol_input_b",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "vol_in_C": {
+    "name": "home.vol_input_c",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "vol_out": {
+    "name": "home.vol_output",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "01"
+  },
+  "vol_out_A": {
+    "name": "home.vol_output_a",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "vol_out_B": {
+    "name": "home.vol_output_b",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "vol_out_C": {
+    "name": "home.vol_output_c",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "03"
+  },
+  "fre_in": {
+    "name": "home.fre_input",
+    "value": "0",
+    "unit": "Hz",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "01,03"
+  },
+  "fre_out": {
+    "name": "home.fre_output",
+    "value": "0",
+    "unit": "Hz",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "0.1",
+    "bytes":"2",
+    "protocol_types": "01,03"
+  },
+  "vol_bat": {
+    "name": "home.bat_vol",
+    "value": "0",
+    "unit": "V",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "1",
+    "bytes":"2",
+    "protocol_types": "01,03"
+  },
+  "per_bat": {
+    "name": "home.bat_level",
+    "value": "0",
+    "unit": "%",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "1",
+    "bytes":"1",
+    "protocol_types": "01,03"
+  },
+  "tmp_ups": {
+    "name": "home.ups_temp",
+    "value": "0",
+    "unit": "℃",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "1",
+    "bytes":"1",
+    "protocol_types": "01,03",
+    "is_listen_tmp": "true"
+  },
+  "per_out_load": {
+    "name": "home.output_load_percent",
+    "value": "0",
+    "unit": "%",
+    "type": "TextField",
+    "editable": "false",
+    "scale": "1",
+    "bytes":"1",
+    "protocol_types": "01,03"
+  }
+}

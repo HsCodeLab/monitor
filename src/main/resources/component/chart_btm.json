@@ -1,0 +1,20 @@
+{
+  "ctrl1": {
+    "type": "Label",
+    "value": "history.chart_option",
+    "isShow": "true"
+  },
+  "ctrl2": {
+    "type": "ComboBox",
+    "items": "history.line_chart,history.bar_chart",
+    "value": "history.line_chart",
+    "isShow": "true",
+    "group_name": "chart_type",
+    "is_need_translate": "true"
+  },
+  "ctrl3": {
+    "type": "Button",
+    "value": "menubar.save",
+    "isShow": "true"
+  }
+}

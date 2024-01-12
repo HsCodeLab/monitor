@@ -1,0 +1,136 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'org.javamodularity.moduleplugin' version '1.8.9' apply false
+    id "org.beryx.jlink" version "2.24.1"
+}
+
+group 'com.watson.monitor'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    modularity.inferModulePath = true
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-controls:17.0.2'
+    implementation 'org.controlsfx:controlsfx:11.1.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.4'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+    implementation 'io.github.mkpaz:atlantafx-base:2.0.1'
+    implementation 'com.jfoenix:jfoenix:9.0.10'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.fazecast:jSerialComm:2.10.3'
+    implementation 'org.usb4java:usb4java-javax:1.3.0'
+    implementation 'net.wimpi:jamod:1.2'
+    implementation 'org.snmp4j:snmp4j:3.7.7'
+//    implementation 'org.mybatis:mybatis:3.5.14'
+    implementation 'org.mybatis:mybatis:3.5.15'
+    implementation 'com.github.pagehelper:pagehelper:5.2.0'
+    implementation 'log4j:log4j:1.2.17'
+    implementation 'com.h2database:h2:2.1.210'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'javax.activation:activation:1.1.1'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'org.jboss:jboss-vfs:3.3.0.Final'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+javafx {
+    version = "17"
+    modules = ['javafx.controls']
+}
+
+application {
+    mainModule = "com.watson.monitor"
+    mainClass = "com.watson.monitor.App"
+    applicationName = 'monitor'
+}
+
+//sourceSets {
+//    main {
+//        resources {
+//            srcDirs 'src/main/resources'
+//            include '**/*.xml'
+//        }
+//    }
+//}
+
+//task copyXmlFiles(type: Copy) {
+//    from 'src/main/resources'
+//    include '**/*.xml'
+//    into "$buildDir/classes/java/main/com/watson/monitor/mapper" // 指定拷贝到的目标路径
+//}
+
+//jar {
+//    manifest {
+//        attributes 'Implementation-Title': "modular-monitor",
+//                'Main-Class': 'com.watson.monitor.App'
+//    }
+//}
+
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'monitor'
+        jvmArgs = ['-Dlogback.configurationFile=./logback.xml']
+    }
+    mergedModule {
+        requires 'java.naming'
+        requires 'java.xml'
+        requires 'java.sql'
+        requires 'java.datatransfer'
+        uses 'javax.mail.Provider'
+        uses 'ch.qos.logback.classic.spi.Configurator'
+//        excludeProvides servicePattern: 'javax.servlet.*'
+    }
+    jpackage {
+        def currentOs = org.gradle.internal.os.OperatingSystem.current()
+        def imgType = currentOs.windows ? 'ico' : currentOs.macOsX ? 'icns' : 'png'
+        imageOptions += ['--icon', "./icon/logo.$imgType"]
+        installerOptions += ['--resource-dir', "src/main/resources"]
+        installerOptions += ['--vendor', 'HsCodeLab']
+
+        if(currentOs.windows) {
+            installerOptions += ['--win-per-user-install', '--win-dir-chooser', '--win-menu', '--win-shortcut']
+//            imageOptions += ['--win-console'] 带不带cmd命令行,输出语句什么的,在调试的时候建议带上,可以查看调试报错信息
+            jvmArgs = ['-p', '.']
+        }
+        else if (currentOs.linux) {
+            installerOptions += ['--linux-package-name', 'hellofx','--linux-shortcut']
+        }
+        else if (currentOs.macOsX) {
+            installerOptions += ['--mac-package-name', 'hellofx']
+        }
+
+//        if (org.gradle.internal.os.OperatingSystem.current().windows) {
+//            installerOptions += ['--win-per-user-install', '--win-dir-chooser', '--win-menu', '--win-shortcut']
+////            imageOptions += ['--win-console']
+//            jvmArgs = ['-p', '.']
+//        }
+    }
+}
+
+tasks.jpackage.doFirst {
+    copy {
+        from('src/main/resources')
+        into("$buildDir/jpackage/monitor/app")
+    }
+    copy {
+        from('db')
+        into("$buildDir/jpackage/monitor/db")
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "group_name": "history_data",
+  "headers": {
+    "sn": {
+      "name": "history.sn",
+      "prop": "sn"
+    },
+    "voltageInput": {
+      "name": "home.vol_input",
+      "prop": "voltageInput",
+      "unit": "V"
+    },
+    "voltageOutput": {
+      "name": "home.vol_output",
+      "prop": "voltageOutput",
+      "unit": "V"
+    },
+    "frequencyInput": {
+      "name": "home.fre_input",
+      "prop": "frequencyInput",
+      "unit": "Hz"
+    },
+    "frequencyOutput": {
+      "name": "home.fre_output",
+      "prop": "frequencyOutput",
+      "unit": "Hz"
+    },
+    "batteryVoltage": {
+      "name": "home.bat_vol",
+      "prop": "batteryVoltage",
+      "unit": "V"
+    },
+    "batteryLevel": {
+      "name": "home.bat_level",
+      "prop": "batteryLevel",
+      "unit": "%"
+    },
+    "temperature": {
+      "name": "home.ups_temp",
+      "prop": "temperature",
+      "unit": "℃"
+    },
+    "outputLoadPercent": {
+      "name": "home.output_load_percent",
+      "prop": "outputLoadPercent",
+      "unit": "%"
+    }
+  }
+}

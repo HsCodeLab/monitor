@@ -1,0 +1,13 @@
+{
+  "default": "zh",
+  "lans": {
+    "lan1": {
+      "key": "zh",
+      "name": "中文"
+    },
+    "lan2": {
+      "key": "en",
+      "name": "English"
+    }
+  }
+}

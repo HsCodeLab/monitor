@@ -11,8 +11,8 @@ https://gitee.com/watson_bi/monitor/
 
 
 #### Technologies and Tools:
-Development Tools: IntelliJ IDEA, JDK 17, Gradle
-Logic Processing: Java, with special use of the Jackson library for JSON handling
+Development Tools: IntelliJ IDEA, JDK 17, Gradle/n
+Logic Processing: Java, with special use of the Jackson library for JSON handling/n
 UI Framework: JavaFX
 Database: H2 embedded database
 Database Framework: MyBatis

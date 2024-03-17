@@ -47,9 +47,6 @@ Database Framework: MyBatis
 10. More Information:
     For additional details, feel free to contact via Weixin(Chinses version WeChat): huasheng-dali.
 
-11. Personal Studio Services:
-    A newly established studio welcomes custom software orders at negotiable prices, including but not limited to frontend/backend development, mobile app development, and supervisory control systems related to renewable energy.
-
 #### Software Experience:
 Two compressed files, msi.zip (installation package) and monitor.zip (standalone), are available in the master directory for installation and direct experience.
 

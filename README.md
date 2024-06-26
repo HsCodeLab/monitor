@@ -12,6 +12,12 @@
 页面和协议都是基于JSON配置文件，软件启动以后读取相关JSON配置，对应生成相应页面。通信时根据JSON协议配置读取和显示.
 也就是说后期如果协议有修改或者增加，对应修改相关的JSON协议文件就好了.
 
+#### 访问链接
+
+Github: https://github.com/HsCodeLab/monitor
+
+Gitee: https://gitee.com/watson_bi/monitor
+
 
 #### 相关软件和技术
 

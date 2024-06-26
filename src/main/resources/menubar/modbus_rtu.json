@@ -1,0 +1,56 @@
+{
+  "port": {
+    "name": "端口",
+    "type": "ComboBox",
+    "value": "",
+    "items": "",
+    "isShow": "true",
+    "item_name": "port"
+  },
+  "baud_rate": {
+    "name": "波特率",
+    "type": "ComboBox",
+    "value": "9600",
+    "items": "1200,2400,4800,9600,19200,38400",
+    "isShow": "true",
+    "item_name": "baud_rate"
+  },
+  "data_bits": {
+    "name": "数据位",
+    "type": "ComboBox",
+    "value": "8",
+    "items": "5,6,7,8",
+    "isShow": "true",
+    "item_name": "data_bit"
+  },
+  "stop_bits": {
+    "name": "停止位",
+    "type": "ComboBox",
+    "value": "1",
+    "items": "1,1.5,2",
+    "isShow": "true",
+    "item_name": "stop_bit"
+  },
+  "parity": {
+    "name": "校验",
+    "type": "ComboBox",
+    "value": "None",
+    "items": "None,Odd,Even,Mark,Space",
+    "isShow": "true",
+    "item_name": "parity"
+  },
+  "slave_id": {
+    "name": "从机ID",
+    "type": "CheckComboBox",
+    "value": "1",
+    "items": "1-247",
+    "isShow": "true",
+    "item_name": "slave_id"
+  },
+  "open": {
+    "type": "Button",
+    "value": "打开串口",
+    "isShow": "true",
+    "item_name": "open"
+  }
+}

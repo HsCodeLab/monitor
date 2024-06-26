@@ -1,0 +1,14 @@
+{
+  "recipient": {
+    "name": "收件人",
+    "type": "TextField",
+    "value": "1603441905@qq.com",
+    "editable": "true",
+    "item_name": "recipient"
+  },
+  "send": {
+    "type": "Button",
+    "value": "发送",
+    "item_name": "send"
+  }
+}

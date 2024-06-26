@@ -1,0 +1,7 @@
+版本更新记录
+2024-6-23(1.0.1):
+1.统一日志框架为logback
+2.解决gradle运行控制台输出乱码问题,分为两种情况,程序中的输出语句乱码原因是jvm字符集问题,在gradle.build中设置
+  lombok->slf4j->log打印语句乱码,因为采用的logback实现,将以前的log4j替换为logback(删除log4j.xml,添加logback.xml),
+  并设置字符集为utf-8.
+3.架构/代码优化.

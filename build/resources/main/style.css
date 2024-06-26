@@ -1,0 +1,18 @@
+.background {
+    -fx-background-image: url("bg.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.flow-current {
+    animation: flow-current 5s linear infinite;
+}
+
+@keyframes flow-current {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(600px);
+    }
+}

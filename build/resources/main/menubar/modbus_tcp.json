@@ -1,0 +1,54 @@
+{
+  "net1": {
+    "name": "网段1",
+    "type": "TextField",
+    "value": "127",
+    "isShow": "true",
+    "editable": "true",
+    "item_name": "net1"
+  },
+  "net2": {
+    "name": "网段2",
+    "type": "TextField",
+    "value": "0",
+    "isShow": "true",
+    "editable": "true",
+    "item_name": "net2"
+  },
+  "net3": {
+    "name": "网段3",
+    "type": "TextField",
+    "value": "0",
+    "isShow": "true",
+    "editable": "true",
+    "item_name": "net3"
+  },
+  "net4": {
+    "name": "网段4",
+    "type": "TextField",
+    "value": "1",
+    "isShow": "true",
+    "editable": "true",
+    "item_name": "net4"
+  },
+  "port": {
+    "name": "端口",
+    "type": "TextField",
+    "value": "502",
+    "isShow": "true",
+    "editable": "true",
+    "item_name": "port"
+  },
+  "ip_list": {
+    "name": "ip列表",
+    "type": "ListView",
+    "isShow": "true",
+    "item_name": "ip_list"
+  },
+  "read": {
+    "type": "Button",
+    "value": "读取",
+    "isShow": "true",
+    "item_name": "read"
+  }
+}

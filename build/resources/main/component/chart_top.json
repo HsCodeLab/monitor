@@ -1,0 +1,182 @@
+{
+  "ctrl1": {
+    "type": "Label",
+    "value": "history.cycle",
+    "isShow": "true"
+  },
+  "ctrl2": {
+    "type": "ComboBox",
+    "value": "history.yearly",
+    "items": "history.yearly,history.monthly,history.daily,history.hourly",
+    "isShow": "true",
+    "group_name": "cycle",
+    "is_need_translate": "true"
+  },
+  "year": {
+    "ctrl1": {
+      "type": "Label",
+      "value": "history.year_start",
+      "isShow": "true",
+      "group_name": "cycle_year",
+      "member_name": "label1"
+    },
+    "ctrl2": {
+      "type": "Spinner",
+      "min": "2010",
+      "max": "2030",
+      "value": "2010",
+      "step": "1",
+      "isShow": "true",
+      "group_name": "cycle_year",
+      "member_name": "spinner1"
+    },
+    "ctrl3": {
+      "type": "Label",
+      "value": "history.year_end",
+      "isShow": "true",
+      "group_name": "cycle_year",
+      "member_name": "label2"
+    },
+    "ctrl4": {
+      "type": "Spinner",
+      "min": "2010",
+      "max": "2030",
+      "value": "2010",
+      "step": "1",
+      "isShow": "true",
+      "group_name": "cycle_year",
+      "member_name": "spinner2"
+    }
+  },
+  "month": {
+    "group_name": "month",
+    "ctrl1": {
+      "type": "Label",
+      "value": "history.year",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "label_year"
+    },
+    "ctrl2": {
+      "type": "Spinner",
+      "min": "2010",
+      "max": "2030",
+      "value": "2010",
+      "step": "1",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "spinner_year"
+    },
+    "ctrl3": {
+      "type": "Label",
+      "value": "history.month_start",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "label1"
+    },
+    "ctrl4": {
+      "type": "ComboBox",
+      "items": "1,2,3,4,5,6,7,8,9,10,11,12",
+      "value": "1",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "combo1"
+    },
+    "ctrl5": {
+      "type": "Label",
+      "value": "history.month_end",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "label2"
+    },
+    "ctrl6": {
+      "type": "ComboBox",
+      "items": "1,2,3,4,5,6,7,8,9,10,11,12",
+      "value": "1",
+      "isShow": "false",
+      "group_name": "cycle_month",
+      "member_name": "combo2"
+    }
+  },
+  "day": {
+    "ctrl1": {
+      "type": "Label",
+      "value": "history.date_start",
+      "isShow": "false",
+      "group_name": "cycle_day",
+      "member_name": "label1"
+    },
+    "ctrl2": {
+      "type": "DatePicker",
+      "value": "2020-01-01",
+      "isShow": "false",
+      "group_name": "cycle_day",
+      "member_name": "datepicker1"
+    },
+    "ctrl3": {
+      "type": "Label",
+      "value": "history.date_end",
+      "isShow": "false",
+      "group_name": "cycle_day",
+      "member_name": "label2"
+    },
+    "ctrl4": {
+      "type": "DatePicker",
+      "value": "2020-01-01",
+      "isShow": "false",
+      "group_name": "cycle_day",
+      "member_name": "datepicker2"
+    }
+  },
+  "hour": {
+    "ctrl1": {
+      "type": "Label",
+      "value": "history.date",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "label_day"
+    },
+    "ctrl2": {
+      "type": "DatePicker",
+      "value": "2020-01-01",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "datepicker_day"
+    },
+    "ctrl3": {
+      "type": "Label",
+      "value": "history.time_start",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "label1"
+    },
+    "ctrl4": {
+      "type": "ComboBox",
+      "items": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+      "value": "0",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "combo1"
+    },
+    "ctrl5": {
+      "type": "Label",
+      "value": "history.time_end",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "label2"
+    },
+    "ctrl6": {
+      "type": "ComboBox",
+      "items": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+      "value": "0",
+      "isShow": "false",
+      "group_name": "cycle_hour",
+      "member_name": "combo2"
+    }
+  },
+  "ctrl3": {
+    "type": "Button",
+    "value": "history.inquiry",
+    "isShow": "true"
+  }
+}

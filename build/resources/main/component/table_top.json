@@ -1,0 +1,27 @@
+{
+  "ctrl1": {
+    "type": "Label",
+    "value": "history.date_start",
+    "isShow": "true"
+  },
+  "ctrl2": {
+    "type": "DatePicker",
+    "value": "2020-01-01",
+    "isShow": "true"
+  },
+  "ctrl3": {
+    "type": "Label",
+    "value": "history.date_end",
+    "isShow": "true"
+  },
+  "ctrl4": {
+    "type": "DatePicker",
+    "value": "2020-01-01",
+    "isShow": "true"
+  },
+  "ctrl5": {
+    "type": "Button",
+    "value": "history.inquiry",
+    "isShow": "true"
+  }
+}

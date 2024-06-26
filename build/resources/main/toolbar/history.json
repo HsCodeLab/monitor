@@ -1,0 +1,50 @@
+{
+  "headers":{
+    "sn": {
+      "name": "序列号",
+      "prop": "sn"
+    },
+    "voltageInput": {
+      "name": "输入电压",
+      "prop": "voltageInput",
+      "unit": "V"
+    },
+    "voltageOutput": {
+      "name": "输出电压",
+      "prop": "voltageOutput",
+      "unit": "V"
+    },
+    "frequencyInput": {
+      "name": "输入频率",
+      "prop": "frequencyInput",
+      "unit": "Hz"
+    },
+    "frequencyOutput": {
+      "name": "输出频率",
+      "prop": "frequencyOutput",
+      "unit": "Hz"
+    },
+    "batteryVoltage": {
+      "name": "电池电压",
+      "prop": "batteryVoltage",
+      "unit": "V"
+    },
+    "batteryLevel": {
+      "name": "电池电量",
+      "prop": "batteryLevel",
+      "unit": "%"
+    },
+    "temperature": {
+      "name": "UPS温度",
+      "prop": "temperature",
+      "unit": "℃"
+    },
+    "outputLoadPercent": {
+      "name": "输出负载百分比",
+      "prop": "outputLoadPercent",
+      "unit": "%"
+    }
+  },
+  "tabbars": "表格,图表"
+
+}

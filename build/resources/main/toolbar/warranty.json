@@ -1,0 +1,14 @@
+{
+  "date_buy": {
+    "name": "购买日期",
+    "value": "2020-01-01",
+    "type": "DatePicker",
+    "button": "应用"
+  },
+  "date_end": {
+    "name": "到期时间",
+    "value": "2020-01-01",
+    "type": "DatePicker",
+    "button": "应用"
+  }
+}

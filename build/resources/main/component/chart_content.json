@@ -1,0 +1,15 @@
+{
+  "group_name": "history_chart",
+  "line": {
+    "x_name": "history.time",
+    "y_name": "history.energy",
+    "chart_name": "history.charging_history",
+    "legend_name": "history.charging_history"
+  },
+  "bar": {
+    "x_name": "history.time",
+    "y_name": "history.energy",
+    "chart_name": "history.charging_history",
+    "legend_name": "history.charging_history"
+  }
+}
